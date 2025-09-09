@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #CCC;
+  }
+  
+  html, body{
+    height: 100%;
+  }
+
+  .container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1;
+  }
+ 
+h1{
+    color: #fa4c0d;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ccc;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+
+
+.divAdd {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 20px;
+
+}
+
+.divAdd .input {
+    width: 80%;
+    height: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+.add {
+    border: 1px solid white;
+    background-color: #fa4c0d;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.add:hover {
+    background-color: #fb6b36;
+}
+
+.tasks {
+    background-color: #ccc;
+    margin-top: 15px;
+    padding: 20px;
+
+}
+
+.tasks div {
+    width: 92%;
+    background-color: #fcfcfc;
+    padding-left: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid rgb(157, 154, 154);
+    margin-bottom: 15px;
+}
+
+
+.tasks div .del {
+    border: 1px solid white;
+    background-color: #fa4c0d;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    height: 20px;
+    font-size: 16px;
+    padding: 2px 8px;
+    margin-right: 10px;
+}
+
+.tasks div .del:hover {
+    background-color: #fb6b36;
+}
+
+.tasks div:hover {
+    background-color: #f1f1f1;
+}
+
+.task {
+    align-items: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.tasks p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+
+.done {
+    color: #008700;
+}
+
+.done::before {
+    content: "✅ Done";
+    
+}
+
+.hide{
+    display: none;
+}
+
+
+
+footer{
+    text-align: center;
+    align-items: center;
+    background-color: #1d1c1c;
+    border-top: 3px solid #fa4c0d;
+   padding-bottom: 14px;
+}
+
+footer p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: white;
+}
+
+
+footer p span{
+    color: #7d7dfd;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+footer p span:hover{
+    background-color: white;
+    border-radius: 4px;
+    padding :2px;
+    transition: 0.3s;
+
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 19px;
+    color: #f3efee;
+    margin-bottom: 5px;
+}
+
+footer a:hover{
+    color: #7d7dfd;
+
+}
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    background-color: #fa4c0d;
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    background-color: white;
+    border: 1px solid #fa4c0d;
+    transition: 0.4s;
+    color: #fa4c0d;
+}
+
+
+/* ___________________________________________- */
+/* @Responsive */
+
+@media (width < 600px){
+    .divAdd .input {
+        font-size: 16px;
+    }
+
+    .divAdd .input::placeholder{
+        font-size: 19px;
+    }
+}
+
